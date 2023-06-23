@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script language="javascript">
+            function checkvowel()
+            {
+                var a=document.getElementById("txt1").value;
+                switch(a)
+                {
+                case 'a':
+                    case 'A':
+                     document.getElementById("ptag").innerHTML="the letter is ="+a;
+                     break;
+                case 'e':
+                        document.getElementById("ptag").innerHTML="the letter is="+a;
+                        break;
+                case 'i':
+                    document.getElementById("ptag").innerHTML="the letter is="+a;
+                    break;
+                    case 'I':
+                        document.getElementById("ptag").innerHTML="the letter is="+a;
+                        break;
+                default:
+                    document.getElementById("ptag").innerHTML="wrong";
+                    break;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="txt1" placeholder="input a letter"><br>
+            <input type="button" value="check letter" onclick="checkvowel()"><br>
+            <p id="ptag">vowel</p>
+            <input type="text" id="ptag">
+            </form>
+            </body>
+</html>

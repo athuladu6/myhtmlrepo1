@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script language="javascript">
+            function confirmation()
+            {
+                var ans=confirm("Leave this site");
+                if(ans)
+                {
+                    alert("bye bye!");
+                    window.location="http://www.google.com/";
+                }
+                else
+                {
+                    alert("thanks!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="Leave" onclick="confirmation();">
+        </form>
+    </body>
+</html>

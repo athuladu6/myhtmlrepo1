@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script language="javascript">
+            function checknumber()
+            {
+                var a=parseInt(document.getElementById("txt1").value);
+                switch(a)
+                {
+                case 1:
+                     document.getElementById("txt2").value="one";
+                     break;
+                case 2:
+                        document.getElementById("txt2").value="two";
+                        break;
+                case 3:
+                    document.getElementById("txt2").value="three";
+                    break;
+                default:
+                    document.getElementById("txt2").value="wrong";
+                    break;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="txt1" placeholder="enternumber"><br>
+            <input type="button" value="checknumber" onclick="checknumber()"><br>
+            <input type="text" id="txt2">
+            </form>
+            </body>
+</html>
