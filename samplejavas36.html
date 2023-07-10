@@ -5,22 +5,21 @@
             {
                 var number=/^[0-9]+$/;
                 if(elem.value.match(number))
-            {
-            alert("congrats..you are typed number");
-            }
+                {
+                    alert("congrats..you are typed numbers");
+                }
                 else
-            {
-            alert(msg);
-            elem.focus();
-        }
-
-        }
+                {
+                    alert(msg);
+                    elem.focus();
+                }
+            }
         </script>
     </head>
     <body>
         <form>
             Phone<input type="text" id="txtno">
-            <input type="button" value="click" onclick="numeric(document.getElementById('txtno'),'Numbers Only Please')">
+            <input type="button" value="click" onclick="numeric(document.getElementById('txtno'),'Number Only Please')">
         </form>
     </body>
 </html>
