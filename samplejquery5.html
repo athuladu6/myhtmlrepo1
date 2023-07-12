@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+            </script>
+            <script>
+                $(document).ready(function(){
+                    $("#p1").click(function(){
+                        $("#p1").html("clicked inside me");
+                    });
+                    $("#p1").dblclick(function(){
+                        $("#p1").html("double clicked inside me");
+                    });
+                    $("#p1").mouseenter(function(){
+                        $("#p1").html("mouseentered inside me");
+                    });
+                    $("#p1").mouseleave(function(){
+                        $("#p1").html("mouseleaved inside me");
+                    });
+                });
+            </script>
+    </head>
+    <body>
+        <p id="p1">Welcome</p>
+    </body>
+</html>

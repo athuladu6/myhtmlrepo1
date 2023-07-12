@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function dataSearch()
+            {
+                var s1=document.getElementById("txtsearch").value;
+                var s2=document.getElementById("txtarea1").value;
+
+                var pos=s2.search(s1);
+                if(pos>0)
+                {
+                    alert("there was match at position:"+pos);
+                }
+                else
+                {
+                    alert("there was no match");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <textarea rows="4" cols="50" id="txtarea1" placeholder="type some datas here.."></textarea><br>
+        <input type="text" id="txtsearch" placeholder="type the content to search"><input type="button" value="search" onclick="dataSearch()">
+    </body>
+</html>

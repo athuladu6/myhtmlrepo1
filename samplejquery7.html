@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#txt1").keypress(function(){
+                    alert("keypressed");
+                });
+                $("#txt2").keydown(function(){
+                    alert("keydown");
+                });
+                $("#txt3").keyup(function(){
+                    alert("keyup");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt1" placeholder="try keypress here">
+        <input type="text" id="txt2" placeholder="try keydown here">
+        <input type="text" id="txt3" placeholder="try keyup here">
+    </body>
+</html>
