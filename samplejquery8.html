@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script>
+           $(document).ready(function(){
+            $("#btn1").click(function(){
+                $mytext= $("#txt1").val();
+                $("#txt2").val($mytext);
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt1" placeholder="Enter text">
+        <input type="text" id="txt2">
+        <input type="button" id="btn1" value="Click me">
+    </body>
+</html>
